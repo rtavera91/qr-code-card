@@ -1,0 +1,120 @@
+/* variables css */
+:root {
+  --bg-color-white: hsl(0, 0%, 100%);
+  --bg-color-light: hsl(212, 45%, 89%);
+  --bg-color-blue: hsl(220, 15%, 55%);
+  --bg-color-dark: hsl(218, 44%, 22%);
+  --font-size-p: 15px;
+}
+
+/* importación de fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* reseteo CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color-light);
+  max-width: 1440px;
+  font-family: "Outfit", sans-serif;
+}
+
+.central-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* tarjeta */
+.card {
+    background-color: var(--bg-color-white);
+    height: auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.text{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.text h2 {
+    font-size: 700;
+    color: var(--bg-color-dark);
+    margin-bottom: 1rem;
+}
+
+.text p {
+    font-size: 400;
+    color: var(--bg-color-blue);
+    margin-bottom: 1rem;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr {
+    border-radius: 5%;
+    width: 360px;
+    height: auto;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+    .card {
+        width: 300px;
+    }
+
+    .qr {
+        width: 260px;
+    }
+}
+
+@media (max-width: 425px) {
+    .card {
+        width: 250px;
+    }
+    .text h2 {
+        font-size: 1.5rem;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+
+    .qr {
+        width: 210px;
+    }
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 200px;
+    }
+    .text h2 {
+        font-size: 1.3rem;
+    }
+    .text p {
+        font-size: 0.9rem;
+    }
+
+    .qr {
+        width: 160px;
+    }
+}
