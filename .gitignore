@@ -15,7 +15,11 @@
 .DS_Store
 .prettierignore
 
-# ignore these files
-index.html
-README-template.md
-README.md
+# Ignorar el archivo index.html en la carpeta QR-CODE-COMPONENT-MAN
+QR-CODE-COMPONENT-MAN/index.html
+
+# Ignorar el archivo README-template.md en la carpeta QR-CODE-COMPONENT-MAN
+QR-CODE-COMPONENT-MAN/README-template.md
+
+# Ignorar el archivo README.md en la carpeta QR-CODE-COMPONENT-MAN
+QR-CODE-COMPONENT-MAN/README.md
